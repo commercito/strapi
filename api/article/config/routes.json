@@ -24,6 +24,22 @@
         "policies": []
       }
     },
+        {
+      "method": "GET",
+      "path": "/articles/search/in/title",
+      "handler": "article.search_in_title",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/articles/search/in/content",
+      "handler": "article.search_in_content",
+      "config": {
+        "policies": []
+      }
+    },
     {
       "method": "POST",
       "path": "/articles",

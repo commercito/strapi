@@ -8,6 +8,27 @@
 * интерфейс на русском языке
 
 
+### Нововведения
+
+Создан LIKE-подобный поиск по заголовкам или содержанию статей.  
+
+* поиск по заголовкам: `/articles/search/in/title?_q=долл`
+* поиск по статье: `/articles/search/in/content?_q=долл`
+
+Будут выполнены такие запросы:    
+
+```sql
+select * from `articles`
+where `title` like '%долл%'
+```
+
+или
+
+```sql
+select * from `articles`
+where `content` like '%долл%'
+```
+
 ---  
 ![главная страница](screenshot/img01.png)
 ---  
